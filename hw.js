@@ -60,7 +60,7 @@ shiftLetters('homework');
 // - 2 of diamonds
 // - 3 of diamonds 
 
-var cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
+var cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
 var suits = ["Diamonds", "Hearts", "Clubs", "Spades"];
 var deck = [];
 
@@ -82,7 +82,7 @@ deck.forEach(rank => {
 // Then, loop through this array to build a new array out of every word in the sentence that is 3 or more characters in length.
 // Finally, reverse the order of the new array, join it back together into a string, and display it to the user.
 
-var reverseWords = string => string.split(' ').filter(val => val.length >= 3 ).reverse().join('');
+var reverseWords = string => string.split(' ').filter(val => val.length >= 3 ).reverse().join(' ');
 reverseWords('good evning, lets try to solve our homework');
 
 
